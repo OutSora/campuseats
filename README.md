@@ -71,9 +71,9 @@ docker compose ps
 
 | Участник | Сервисы | Что рассказывает |
 |---|---|---|
-| 1 | Identity + Catalog | REST, PostgreSQL, кэш Valkey |
-| 2 | Order + Kitchen | Kafka, EDA, согласованность данных |
-| 3 | Notification + Analytics | Consumer groups, MongoDB, холодная история |
+| Эминидис Маркос | Identity + Catalog | REST, PostgreSQL, кэш Valkey |
+| Нагайцев Егор | Order + Kitchen | Kafka, EDA, согласованность данных |
+| Кривошта Иван | Notification + Analytics | Consumer groups, MongoDB, холодная история |
 
 Инфраструктуру (`gateway`, `docker-compose.yml`, документацию) команда защищает совместно.
 
@@ -101,7 +101,6 @@ docker compose down -v
 - [User Stories, Use Cases и NFR](docs/02-requirements.md)
 - [C4 L1–L3 и Sequence Diagram](docs/03-architecture.md)
 - [Сравнение Kafka, RabbitMQ и NATS](docs/04-messaging-choice.md)
-- [Шпаргалка к защите](docs/05-defense-guide.md)
 
 ## 7.1 Kubernetes/DevOps-платформа
 
