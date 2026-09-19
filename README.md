@@ -73,7 +73,6 @@ docker compose ps
 | Нагайцев Егор | Order + Kitchen | Kafka, EDA, согласованность данных |
 | Кривошта Иван | Notification + Analytics | Consumer groups, MongoDB, холодная история |
 
-Инфраструктуру (`gateway`, `docker-compose.yml`, документацию) команда защищает совместно.
 
 ## 6. Полезные команды
 
