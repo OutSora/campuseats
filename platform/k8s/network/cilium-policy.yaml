@@ -1,0 +1,16 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata: {name: campuseats-service-policy, namespace: campuseats}
+spec:
+  endpointSelector:
+    matchLabels:
+      app.kubernetes.io/part-of: campuseats
+  ingress:
+    - fromEndpoints:
+        - matchLabels:
+            k8s:io.kubernetes.pod.namespace: campuseats
+        - matchLabels:
+            k8s:io.kubernetes.pod.namespace: istio-ingress
+  egress:
+    # Kafka lives in another namespace; data stores and DNS are cluster-local.
+    - toEntities: [cluster]

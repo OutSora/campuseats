@@ -103,6 +103,14 @@ docker compose down -v
 - [Сравнение Kafka, RabbitMQ и NATS](docs/04-messaging-choice.md)
 - [Шпаргалка к защите](docs/05-defense-guide.md)
 
+## 7.1 Kubernetes/DevOps-платформа
+
+Расширенная часть задания находится в каталоге [`platform`](platform/README.md): Minikube, Cilium/Hubble, Terraform, Argo CD App of Apps, Ansible + Strimzi Kafka, Istio, HAProxy/Keepalived, Valkey-backed Rate Limiting, observability, Kaniko CI/CD, Helm и Locust.
+
+- [Порядок установки](platform/README.md)
+- [Отчёт и матрица заданий](platform/docs/assignment-report.md)
+- [Выбор observability-стека](platform/docs/observability-decisions.md)
+
 ## 8. Структура
 
 ```text
@@ -122,4 +130,3 @@ campuseats/
 ```
 
 > Учебное упрощение: один контейнер PostgreSQL содержит отдельные таблицы сервисов. В промышленной системе каждый сервис должен владеть собственной БД/схемой и не читать таблицы соседа.
-
